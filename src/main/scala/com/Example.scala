@@ -1,3 +1,5 @@
+package com
+
 import java.io._
 import java.net.URL
 
@@ -13,15 +15,15 @@ object Example {
   def main(args: Array[String]): Unit = {
     PropertyConfigurator.configure("log4j.properties")
     println("Sample Scala Project")
-    Logger.getRootLogger.setLevel(Level.INFO)
+    //Logger.getRootLogger.setLevel(Level.INFO)
     //logger.setLevel(MyLevel.level)
-    logger.setLevel(Level.DEBUG)
+    //logger.setLevel(Level.DEBUG)
 
     logger.warn("warning test")
     logger.info("info test")
     logger.log(MyLevel.level, "my level")
     logger.debug("debug test")
-    logger.trace("trace teest")
+    logger.trace("trace test")
   }
 
 }
